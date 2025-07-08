@@ -6,7 +6,7 @@ PHCBNutri é um sistema web para avaliação e gestão da merenda escolar, com f
 
 ## 📁 Estrutura do Projeto
 
-
+```plaintext
 PHCBNutri/
 ├── config/
 │   └── database.php          # Configuração database inicial (simples)
@@ -32,7 +32,7 @@ PHCBNutri/
 ├── vendor/                   # Dependências do composer (PHP)
 ├── composer.json             # Gerenciador de dependências PHP
 └── README.md                 # Documentação do projeto
-````
+```
 
 ---
 
