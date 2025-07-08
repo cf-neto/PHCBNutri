@@ -1,0 +1,17 @@
+{
+    "name": "phcb/phcbnutri",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PhcbNutri\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "cf-neto",
+            "email": "carlosfdsn2008@gmail.com"
+        }
+    ],
+    "require": {}
+}
