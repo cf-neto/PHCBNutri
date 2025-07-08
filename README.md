@@ -7,25 +7,34 @@ PHCBNutri é um sistema web para avaliação e gestão da merenda escolar, com f
 ## 📁 Estrutura do Projeto
 
 
-```plaintext
 PHCBNutri/
+├── config/
+│   └── database.php          # Configuração database inicial (simples)
+│
 ├── public/
-│ ├── assets/
-│ │ ├── css/
-│ │ │ └── config.css # Estilos personalizados
-│ │ ├── img/
-│ │ └── js/
-│ └── index.html # Página principal
+│   ├── assets/
+│   │   ├── css/
+│   │   │   └── config.css    # Estilos personalizados
+│   │   ├── img/
+│   │   └── js/
+│   └── index.html            # Página principal
 │
 ├── src/
-│ ├── Controllers/
-│ ├── Models/
-│ ├── Views/
+│   ├── Auth/
+│   │   ├── AuthController.php
+│   │   ├── login.php
+│   │   ├── logout.php
+│   │   └── register.php
+│   ├── Controllers/
+│   ├── Models/
+│   └── Views/
 │
-├── vendor/ # Dependências do composer (PHP)
-├── composer.json # Gerenciador de dependências PHP
-└── README.md # Documentação do projeto
-```
+├── vendor/                   # Dependências do composer (PHP)
+├── composer.json             # Gerenciador de dependências PHP
+└── README.md                 # Documentação do projeto
+````
+
+---
 
 # 🚀 Tecnologias Utilizadas
 
