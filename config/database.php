@@ -1,16 +1,13 @@
 <?php
 
-$dbHost = 'localhost'; // Apenas para desenvolvimento
-$dbUsername = 'root';
-$dbPassword = '';
-$dbName = 'phcb-nutri';
+try {
+    $pdo = new PDO("mysql:host=localhost;dbname=phcb-nutri", "root", "");    
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Conectado com sucesso!";
 
-$conn = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
-
-if ($conn->connect_error){
-    die("Falha na conexão: " . $conn->connect_error);
+} catch (PDOException $e) {
+    echo "Erro ao conectar: " . $e->getMessage();
 }
 
-$conn->set_charset("utf8");
 
 ?>
